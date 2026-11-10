@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aion V – שאלות ותשובות של קהילת הבעלים</title>
+<meta name="description" content="תקלות נפוצות, טעינה, אפליקציה, עדכוני תוכנה, מזגן ועוד – תשובות שנאספו מקבוצת בעלי GAC Aion V בישראל.">
+<meta property="og:title" content="Aion V – שאלות ותשובות של קהילת הבעלים">
+<meta property="og:description" content="מחפשים פתרון? הקלידו את הבעיה ומצאו מה עבד לבעלים אחרים.">
+<meta name="theme-color" content="#1d4e9e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Secular+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+<header class="sign">
+  <div class="sign-inner">
+    <h1>Aion V<span>שאלות ותשובות של קהילת הבעלים</span></h1>
+    <label class="search" for="q">
+      <span class="visually-hidden">חיפוש</span>
+      <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+      <input id="q" type="search" placeholder="מה הבעיה? למשל: המזגן לא מקרר" autocomplete="off" enterkeyhint="search">
+    </label>
+  </div>
+</header>
+
+<nav class="chips" id="chips" aria-label="נושאים"></nav>
+
+<main id="main">
+  <p class="status" id="status" aria-live="polite"></p>
+  <div id="list"></div>
+  <section class="empty" id="empty" hidden>
+    <h2>לא נמצאה תשובה</h2>
+    <p>נסו מילה אחרת (״טעינה״ במקום ״מטען״), או שאלו בקבוצה – ואם נמצא פתרון, נוסיף אותו לכאן.</p>
+  </section>
+</main>
+
+<footer>
+  <p>המידע נאסף מתוך שיחות בקבוצת הוואטסאפ של בעלי GAC Aion V בישראל, ונכתב מחדש ללא פרטים אישיים. זה מדריך קהילתי ולא מידע רשמי של היצרן או היבואן – בכל עניין בטיחותי או אחריות פנו ליבואן.</p>
+  <p id="updated"></p>
+</footer>
+
+<script src="app.js?v=2"></script>
+</body>
+</html>
