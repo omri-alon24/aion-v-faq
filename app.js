@@ -173,6 +173,13 @@
     });
   };
 
+  const updateChipFade = () => {
+    const atEnd = Math.abs(chips.scrollLeft) + chips.clientWidth >= chips.scrollWidth - 2;
+    chips.classList.toggle("at-end", atEnd);
+  };
+  chips.addEventListener("scroll", updateChipFade, { passive: true });
+  window.addEventListener("resize", updateChipFade);
+
   // ---- Events ----
   let timer;
   input.addEventListener("input", () => {
@@ -215,6 +222,7 @@
       const q = new URLSearchParams(location.search).get("q");
       if (q) input.value = q;
       renderChips();
+      updateChipFade();
       render();
       openFromHash();
     })
